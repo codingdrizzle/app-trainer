@@ -10,7 +10,7 @@ const Navbar = ({ navItems, to }) => {
     const [ show, setShow] = useState()
     return (
         <div className='navbar'>
-            <Title level={3}>Training Center</Title>
+            <Title level={3}>Farmeraid Training</Title>
             <div className='navItems'>
                 {navItems.map(item => (
                     <Link to={`/${item.toLowerCase()}`} className={'navItem'}>
