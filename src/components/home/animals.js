@@ -34,8 +34,8 @@ const Animals = () => {
                     <Step title="Choose type" onStepClick={() => handleStep(current)} />
                     <Step title="In Progress" onStepClick={() => handleStep(current)} />
                     <Step title="Next" onStepClick={() => handleStep(current)} />
-                    <Step title="Keep Waiting" description="This is a description." onStepClick={() => handleStep(current)} />
-                    <Step title="Finish" description="This is a description." onStepClick={() => handleStep(current)} />
+                    {/* <Step title="Keep Waiting" description="This is a description." onStepClick={() => handleStep(current)} />
+                    <Step title="Finish" description="This is a description." onStepClick={() => handleStep(current)} /> */}
                 </Steps>
             </div>
             <Row gutter={[30, 30]} align={'middle'} justify={'center'}>
@@ -96,23 +96,35 @@ const Animals = () => {
                     current === 2 && string[string.length - 1] === 'goats' ?
                         <Col span={24}>
                             <Row gutter={[10, 10]} align={'middle'} justify='center'>
-                                <Col xs={18}  style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                                <Col xs={18} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                     <iframe width="990" height="400" src="https://www.youtube.com/embed/6rywxNkZFYQ" title="Goat Rearing In AFRICA! She Started With Only 3 GOATS! /Successful Farmer." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </Col>
                             </Row>
                         </Col>
                         : current === 2 && string[string.length - 1] === 'cow' ?
-                        <Row gutter={[10, 10]} align={'middle'} justify='center'>
-                            <Col xs={18}  style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                            <Row gutter={[10, 10]} align={'middle'} justify='center'>
+                                <Col xs={18} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                     <iframe width="990" height="400" src="https://www.youtube.com/embed/DzGxvxK9Ll4" title="AYEKOO: Cattle Rearing In Ghana" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </Col>
-                        </Row>
-                        : current === 2 && string[string.length - 1] === 'pig' &&
-                        <Row gutter={[10, 10]} align={'middle'} justify='center'>
-                            <Col xs={18}  style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                                <iframe width="990" height="400" src="https://www.youtube.com/embed/qbZP32Jd02I" title="How To Become A millionaire Through Pig-rearing! /2021 TIPS!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </Col>
-                        </Row>
+                                </Col>
+                            </Row>
+                            : current === 2 && string[string.length - 1] === 'pig' ?
+                                <Row gutter={[10, 10]} align={'middle'} justify='center'>
+                                    <Col xs={18} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                        <iframe width="990" height="400" src="https://www.youtube.com/embed/qbZP32Jd02I" title="How To Become A millionaire Through Pig-rearing! /2021 TIPS!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </Col>
+                                </Row>
+                                : current === 2 && string[string.length - 1] === 'hens' ?
+                                    <Row gutter={[10, 10]} align={'middle'} justify='center'>
+                                        <Col xs={18} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                            <iframe width="990" height="400" src="https://www.youtube.com/embed/f2iJndebucU" title="How I Became a Millionaire by Local chicken Farming | My Challanges" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </Col>
+                                    </Row>
+                                    : current === 2 && string[string.length - 1] === 'turkey' &&
+                                    <Row gutter={[10, 10]} align={'middle'} justify='center'>
+                                        <Col xs={18} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                                <iframe width="990" height="400" src="https://www.youtube.com/embed/OrtTV0R5SU0" title="How to start Turkey Farming business | Step-by-step Lessons" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        </Col>
+                                    </Row>
                 }
             </Row>
         </div>
