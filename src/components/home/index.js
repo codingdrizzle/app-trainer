@@ -14,11 +14,7 @@ const Home = () => {
         setCurrent(prev => prev + 1)
     }
     return (
-        <Row gutter={[30, 30]} align={'middle'} justify={'center'}>
-            
-            {/* <Col span={24} className='steps'>
-               
-            </Col> */}
+        <Row gutter={[10, 30]} align={'middle'} justify={'center'}>
                     {
                         data.map((item, index) => (
                             <SelectCard key={index} imgUrl={item.url} link={`/category/${item.to}`}>
