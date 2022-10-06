@@ -31,12 +31,12 @@ const Animals = () => {
                 {
                     current === 0 &&
                     <>
-                        <Col xs={12} md={10} className='select-card' style={{ backgroundImage: `url(https://cdn.pixabay.com/photo/2016/08/16/01/19/goat-1596880__340.jpg)` }}>
+                        <Col xs={24} md={10} className='select-card' style={{ backgroundImage: `url(https://cdn.pixabay.com/photo/2016/08/16/01/19/goat-1596880__340.jpg)` }}>
                             <div className='select-card-inner' onClick={() => handleClick('livestock / ')}>
                                 <Title level={1} style={{ color: '#fff' }}>Livestock</Title>
                             </div>
                         </Col>
-                        <Col xs={12} md={10} className='select-card' onClick={() => handleClick('fouls / ')} style={{ backgroundImage: `url(https://cdn.pixabay.com/photo/2016/11/29/05/25/chicken-1867521__340.jpg)` }}>
+                        <Col xs={24} md={10} className='select-card' onClick={() => handleClick('fouls / ')} style={{ backgroundImage: `url(https://cdn.pixabay.com/photo/2016/11/29/05/25/chicken-1867521__340.jpg)` }}>
                             <div className='select-card-inner'>
                                 <Title level={1} style={{ color: '#fff' }}>Fouls</Title>
                             </div>
@@ -46,29 +46,29 @@ const Animals = () => {
                 {
                     current === 1 && string.includes('livestock') ?
                         <>
-                            <Col xs={12} md={10} className='select-card' style={{ backgroundImage: `url(https://cdn.pixabay.com/photo/2014/09/24/15/15/billy-goat-459232__340.jpg)` }}>
+                            <Col xs={24} md={10} className='select-card' style={{ backgroundImage: `url(https://cdn.pixabay.com/photo/2014/09/24/15/15/billy-goat-459232__340.jpg)` }}>
                                 <div className='select-card-inner' onClick={() => handleClick('goats / ')}>
                                     <Title level={1} style={{ color: '#fff' }}>Goats/Sheep</Title>
                                 </div>
                             </Col>
-                            <Col xs={12} md={10} className='select-card' onClick={() => handleClick('cow / ')} style={{ backgroundImage: `url(https://cdn.pixabay.com/photo/2018/07/01/15/08/beef-3509716__340.jpg)` }}>
+                            <Col xs={24} md={10} className='select-card' onClick={() => handleClick('cow / ')} style={{ backgroundImage: `url(https://cdn.pixabay.com/photo/2018/07/01/15/08/beef-3509716__340.jpg)` }}>
                                 <div className='select-card-inner'>
                                     <Title level={1} style={{ color: '#fff' }}>Cow</Title>
                                 </div>
                             </Col>
-                            <Col xs={12} md={10} className='select-card' onClick={() => handleClick('cow / ')} style={{ backgroundImage: `url(https://cdn.pixabay.com/photo/2018/05/09/22/44/piglet-3386356__340.jpg)` }}>
+                            <Col xs={24} md={10} className='select-card' onClick={() => handleClick('cow / ')} style={{ backgroundImage: `url(https://cdn.pixabay.com/photo/2018/05/09/22/44/piglet-3386356__340.jpg)` }}>
                                 <div className='select-card-inner'>
                                     <Title level={1} style={{ color: '#fff' }}>Pig</Title>
                                 </div>
                             </Col>
                         </> : current === 1 && string.includes('fouls') && 
                         <>
-                            <Col xs={12} md={10} className='select-card' style={{ backgroundImage: `url(https://www.thehappychickencoop.com/wp-content/uploads/2018/01/rooster-from-a-hen.jpg)` }}>
+                            <Col xs={24} md={10} className='select-card' style={{ backgroundImage: `url(https://www.thehappychickencoop.com/wp-content/uploads/2018/01/rooster-from-a-hen.jpg)` }}>
                                 <div className='select-card-inner' onClick={() => handleClick('livestock / ')}>
                                     <Title level={1} style={{ color: '#fff' }}>Hens</Title>
                                 </div>
                             </Col>
-                            <Col xs={12} md={10} className='select-card' onClick={() => handleClick('fouls / ')} style={{ backgroundImage: `url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/evil-eye-from-foul-turkey-leeann-mclane-goetz.jpg)` }}>
+                            <Col xs={24} md={10} className='select-card' onClick={() => handleClick('fouls / ')} style={{ backgroundImage: `url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/evil-eye-from-foul-turkey-leeann-mclane-goetz.jpg)` }}>
                                 <div className='select-card-inner'>
                                     <Title level={1} style={{ color: '#fff' }}>Turkey</Title>
                                 </div>
