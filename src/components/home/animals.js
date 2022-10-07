@@ -94,7 +94,7 @@ const Animals = () => {
                                     <Title level={1} style={{ color: '#fff' }}>Hens</Title>
                                 </div>
                             </Col>
-                            <Col xs={24} md={10} className='select-card' onClick={() => handleClick('turkey')} style={{ backgroundImage: `url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/evil-eye-from-foul-turkey-leeann-mclane-goetz.jpg)` }}>
+                            <Col xs={24} md={10} className='select-card' onClick={() => handleClick('turkeys')} style={{ backgroundImage: `url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/evil-eye-from-foul-turkey-leeann-mclane-goetz.jpg)` }}>
                                 <div className='select-card-inner'>
                                     <Title level={1} style={{ color: '#fff' }}>Turkey</Title>
                                 </div>
@@ -128,7 +128,7 @@ const Animals = () => {
                                             <iframe width="990" height="400" src="https://www.youtube.com/embed/f2iJndebucU" title="How I Became a Millionaire by Local chicken Farming | My Challanges" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                         </Col>
                                     </Row>
-                                    : current === 2 && string[string.length - 1] === 'turkey' &&
+                                    : current === 2 && string[string.length - 1] === 'turkeys' &&
                                     <Row gutter={[10, 10]} align={'middle'} justify='center'>
                                         <Col xs={18} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                                             <iframe width="990" height="400" src="https://www.youtube.com/embed/OrtTV0R5SU0" title="How to start Turkey Farming business | Step-by-step Lessons" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -136,8 +136,11 @@ const Animals = () => {
                                     </Row>
                 }
             </Row>
-            <Modal open={opened} footer={null} closable={true} onCancel={()=> setOpened(false)}>
-                <FoulData />
+            <Modal open={opened} footer={null} closable={true} onCancel={()=> {
+                string.pop()
+                setOpened(false)
+            }}>
+                <FoulData label={string[string.length - 1]}/>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <Button className='nextBtn' onClick={handleOpen}>Watch Video</Button>
                 </div>

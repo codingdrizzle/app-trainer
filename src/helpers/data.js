@@ -77,45 +77,45 @@ export const FishData = () => {
         </>
     )
 }
-export const FoulData = () => {
+export const FoulData = ({label}) => {
     return (
         <>
             <h2>Foul Farming in Ghana</h2>
-            <b>CHICKENS</b>
-            <p>Raising chicks is exciting! Knowing how is just as important. Here’s our beginner’s guide to raising chickens. This is the first article in a 6-part introduction so that we can help you “start from scratch,” so to speak.</p>
-            <h4><i>Why Should You Raise Chickens?</i></h4>
-            <p>There’s a lot to like about raising chickens in your backyard. The eggs are a real temptation—tastier and fresher than any store-bought eggs, and better for baking, too. The shells, along with the chicken poop, can be tossed right into the compost pile. Much of the day, the birds entertain themselves, picking at grass, worms, beetles, and all of the good things that go into making those yummy farm eggs. Plus, with their keen eye for insect pests, chickens make for great gardening companions.</p>
-            <p>Things to Consider Before Getting Chickens</p>
+            <b>{label.toUpperCase()}</b>
+            <p>Raising {label} is exciting! Knowing how is just as important. Here’s our beginner’s guide to raising {label}. This is the first article in a 6-part introduction so that we can help you “start from scratch,” so to speak.</p>
+            <h4><i>Why Should You Raise {label}?</i></h4>
+            <p>There’s a lot to like about raising {label} in your backyard. The eggs are a real temptation—tastier and fresher than any store-bought eggs, and better for baking, too. The shells, along with the chicken poop, can be tossed right into the compost pile. Much of the day, the birds entertain themselves, picking at grass, worms, beetles, and all of the good things that go into making those yummy farm eggs. Plus, with their keen eye for insect pests, {label} make for great gardening companions.</p>
+            <p>Things to Consider Before Getting {label}</p>
             <ul>
-                <li>First, check local town ordinances to ensure that keeping chickens is even allowed in your neighborhood or if there is a limit to the number of chickens you can keep at once. The last thing you want is to invest time and money into preparing for chickens and then find out that you can’t even keep them!</li>
-                <li>Make sure you have the space for a henhouse or a full-size chicken coop. It has to hold a feeder and water containers, a roosting area, and a nest box for every three hens. A proper coop should be large enough that you can stand in it to gather eggs and shovel manure comfortably, but a simple henhouse can be quite a bit smaller. Plus, any housing must be sturdy enough to keep your chickens safe from all the predators out there! Here’s how to build a chicken coop in your backyard.</li>
-                <li>Chickens need food (and water) daily. Feed is about $20 per 50-pound bag at my co-op, but prices vary depending on your location and the quality of the feed. How long a bag lasts depends on the number of chickens that you have.</li>
+                <li>First, check local town ordinances to ensure that keeping {label} is even allowed in your neighborhood or if there is a limit to the number of {label} you can keep at once. The last thing you want is to invest time and money into preparing for {label} and then find out that you can’t even keep them!</li>
+                <li>Make sure you have the space for a henhouse or a full-size chicken coop. It has to hold a feeder and water containers, a roosting area, and a nest box for every three hens. A proper coop should be large enough that you can stand in it to gather eggs and shovel manure comfortably, but a simple henhouse can be quite a bit smaller. Plus, any housing must be sturdy enough to keep your {label} safe from all the predators out there! Here’s how to build a chicken coop in your backyard.</li>
+                <li>{label.charAt(0).toUpperCase() + label.slice(1)} need food (and water) daily. Feed is about $20 per 50-pound bag at my co-op, but prices vary depending on your location and the quality of the feed. How long a bag lasts depends on the number of {label} that you have.</li>
                 <li>Hens will lay eggs through spring and summer and into the fall, as long as they have 12 to 14 hours of daylight. Expect to collect eggs daily, or even twice a day.</li>
                 <li>All year ‘round, you’ll have to shovel manure.Yippee!</li >
                 <li>If you go away on vacation, you’ll need a reliable chicken - sitter—and they can be scarcer than hens’ teeth!</li >
             </ul>
-            <h4>How to Raise Chickens: (Flock Size, Spacing, and Start-Up Cost)</h4>
+            <h4>How to Raise {label.charAt(0).toUpperCase() + label.slice(1)}: (Flock Size, Spacing, and Start-Up Cost)</h4>
 
-            <b>How Many Chickens Should I Keep?</b>
+            <b>How Many {label.charAt(0).toUpperCase() + label.slice(1)} Should I Keep?</b>
             <ol>
-                <li>Chickens are sociable creatures, so plan to keep three to six birds. With this amount, you’ll always have a steady supply of eggs, since an adult hen lays about two eggs every three days, on average.</li>
-                <li>Chickens are most productive in the first two years of their lives; after that, egg production will slow, so you’ll need to think about replacing your flock with younger birds eventually. Young chicks can be bought from suppliers quite easily, or you can hatch your own if you have a rooster (which we do NOT recommend). Read more about raising baby chicks here!</li>
+                <li>{label.charAt(0).toUpperCase() + label.slice(1)} are sociable creatures, so plan to keep three to six birds. With this amount, you’ll always have a steady supply of eggs, since an adult hen lays about two eggs every three days, on average.</li>
+                <li>{label.charAt(0).toUpperCase() + label.slice(1)} are most productive in the first two years of their lives; after that, egg production will slow, so you’ll need to think about replacing your flock with younger birds eventually. Young chicks can be bought from suppliers quite easily, or you can hatch your own if you have a rooster (which we do NOT recommend). Read more about raising baby chicks here!</li>
             </ol>
             
             <p>
 
-            <b>How Much Space Do Chickens Need?</b>
+                <b>How Much Space Do {label.charAt(0).toUpperCase() + label.slice(1)} Need?</b>
 
-            Ultimately, it depends on which breed of chicken you’re raising. According to the University of Missouri Extension, one medium-sized chicken needs at least 3 square feet of floor space inside the coop and 8-10 square feet outdoors. The more space, the happier and healthier the chickens will be; overcrowding contributes to disease and feather picking.
+            Ultimately, it depends on which breed of chicken you’re raising. According to the University of Missouri Extension, one medium-sized chicken needs at least 3 square feet of floor space inside the coop and 8-10 square feet outdoors. The more space, the happier and healthier the {label} will be; overcrowding contributes to disease and feather picking.
 
-            The birds will need a place to spread their wings, so to speak: a sizeable chicken run, for example, or a whole backyard. (Our hens have lots of outdoor time. They have places to take a dust bath and catch a few rays.) Either way, the space must be fenced in order to keep the chickens in and predators out. (Predators include your own Fido and Fluffy, too!) Add chicken-wire fencing to your list of equipment.
-            How Much Does Keeping Chickens Cost?
+            The birds will need a place to spread their wings, so to speak: a sizeable chicken run, for example, or a whole backyard. (Our hens have lots of outdoor time. They have places to take a dust bath and catch a few rays.) Either way, the space must be fenced in order to keep the {label} in and predators out. (Predators include your own Fido and Fluffy, too!) Add chicken-wire fencing to your list of equipment.
+                How Much Does Keeping {label.charAt(0).toUpperCase() + label.slice(1)} Cost?
             All of this costs money, of course. The materials to build and furnish a coop and a 20x5-foot run—including wood, fencing, and hardware—are going to set you back at least $300. If you can’t do this work yourself, you’ll also be buying skilled labor.
             Overall, expect to spend between $500 and $700 when just getting started, depending on the size of your flock, coop, and run.
-            Gardening with Chickens. <br /> <br />
-            Most folks who keep chickens do so largely for the constant supply of fresh eggs, but did you know that keeping chickens can be also be beneficial for the garden?
-            When the gardening season has finished for the year, let the chickens into your gardening space and watch them go crazy! They’ll uproot the stems and stalks of weeds and gobble up any damaged or overripe vegetables that remain. They’ll eat any weed seeds or insects they find in the soil, and will peck apart and digest vegetable remnants, especially broccoli stems, carrot tops, chard, and kale. After that, they’ll scratch the ground and peck out hidden worms or insects, mixing up the soil in the process—all with endless enthusiasm and curiosity.
-            Chickens don’t only provide a constant supply of fresh eggs—they produce an endless amount of manure, too. Luckily, chicken poo can be composted, aged, and eventually added to the garden. In about 6 months’ time, you will accumulate about 1 cubic foot of manure per chicken.
+            Gardening with {label}. <br /> <br />
+            Most folks who keep {label} do so largely for the constant supply of fresh eggs, but did you know that keeping {label} can be also be beneficial for the garden?
+            When the gardening season has finished for the year, let the {label} into your gardening space and watch them go crazy! They’ll uproot the stems and stalks of weeds and gobble up any damaged or overripe vegetables that remain. They’ll eat any weed seeds or insects they find in the soil, and will peck apart and digest vegetable remnants, especially broccoli stems, carrot tops, chard, and kale. After that, they’ll scratch the ground and peck out hidden worms or insects, mixing up the soil in the process—all with endless enthusiasm and curiosity.
+                {label.charAt(0).toUpperCase() + label.slice(1)} don’t only provide a constant supply of fresh eggs—they produce an endless amount of manure, too. Luckily, chicken poo can be composted, aged, and eventually added to the garden. In about 6 months’ time, you will accumulate about 1 cubic foot of manure per chicken.
             During your daily cleaning of the coop, collect and pile up the chicken poop and used bedding materials. The best decomposition occurs when the pile is 2 parts poop to 1 part bedding materials. Lawn clippings and fruit and vegetable kitchen scraps, as well as leaves, twigs, and shredded paper, can also be added into the mix. Soak the pile and, over the next year or so, wet and stir it regularly to add air. A temperature of 130°F to 150°F is recommended to eliminate bacteria.
             </p>
 

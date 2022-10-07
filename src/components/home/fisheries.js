@@ -79,7 +79,10 @@ const Fisheries = () => {
         }
       </Row>
 
-      <Modal open={opened} footer={null} closable={true} onCancel={() => setOpened(false)}>
+      <Modal open={opened} footer={null} closable={true} onCancel={() => {
+        string.pop()
+        setOpened(false)
+      }}>
         <FishData />
         <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
           <Button className='nextBtn' onClick={handleOpen}>Watch Video</Button>
