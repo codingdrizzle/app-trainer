@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Row, Col, Typography, Steps, message } from 'antd'
+import { Row, Col, Typography, Steps, message, Modal, Button } from 'antd'
+import { FoulData } from '../../helpers/data';
 import SelectCard from './select-card';
 import './styles.css'
 
@@ -7,12 +8,16 @@ const Animals = () => {
     const { Step } = Steps;
     const { Title, Text } = Typography
     const [current, setCurrent] = useState(0)
-    const [string, setString] = useState([])
+    const [opened, setOpened] = useState(false)
+    const [string, setString] = useState(['Animals'])
 
     const handleClick = (name) => {
-        setCurrent(prev => prev + 1)
         setString(prev => [...prev, name])
-        console.log(string)
+        if (string[1] === 'fouls') {
+            setOpened(true)
+        }else{
+            setCurrent(prev => prev + 1)
+        }
     }
 
     const handleStep = (num) => {
@@ -24,6 +29,12 @@ const Animals = () => {
         }
     }
 
+    const handleOpen = () => {
+        setCurrent(prev => prev + 1)
+        setOpened(false)
+
+    }
+
     useEffect(() => {
         console.log(string)
     }, [string])
@@ -32,10 +43,8 @@ const Animals = () => {
             <div className="steps">
                 <Steps direction="horizontal" current={current}>
                     <Step title="Choose type" onStepClick={() => handleStep(current)} />
-                    <Step title="In Progress" onStepClick={() => handleStep(current)} />
                     <Step title="Next" onStepClick={() => handleStep(current)} />
-                    {/* <Step title="Keep Waiting" description="This is a description." onStepClick={() => handleStep(current)} />
-                    <Step title="Finish" description="This is a description." onStepClick={() => handleStep(current)} /> */}
+                    <Step title="Learn" onStepClick={() => handleStep(current)} />
                 </Steps>
             </div>
             <Row gutter={[30, 30]} align={'middle'} justify={'center'}>
@@ -61,7 +70,7 @@ const Animals = () => {
                     </>
                 }
                 {
-                    current === 1 && string[0] === 'livestock' ?
+                    current === 1 && string[1] === 'livestock' ?
                         <>
                             <Col xs={24} md={10} className='select-card' style={{ backgroundImage: `url(https://cdn.pixabay.com/photo/2014/09/24/15/15/billy-goat-459232__340.jpg)` }}>
                                 <div className='select-card-inner' onClick={() => handleClick('goats')}>
@@ -78,7 +87,7 @@ const Animals = () => {
                                     <Title level={1} style={{ color: '#fff' }}>Pig</Title>
                                 </div>
                             </Col>
-                        </> : current === 1 && string[0] === 'fouls' &&
+                        </> : current === 1 && string[1] === 'fouls' &&
                         <>
                             <Col xs={24} md={10} className='select-card' style={{ backgroundImage: `url(https://www.thehappychickencoop.com/wp-content/uploads/2018/01/rooster-from-a-hen.jpg)` }}>
                                 <div className='select-card-inner' onClick={() => handleClick('hens')}>
@@ -122,11 +131,18 @@ const Animals = () => {
                                     : current === 2 && string[string.length - 1] === 'turkey' &&
                                     <Row gutter={[10, 10]} align={'middle'} justify='center'>
                                         <Col xs={18} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                                                <iframe width="990" height="400" src="https://www.youtube.com/embed/OrtTV0R5SU0" title="How to start Turkey Farming business | Step-by-step Lessons" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            <iframe width="990" height="400" src="https://www.youtube.com/embed/OrtTV0R5SU0" title="How to start Turkey Farming business | Step-by-step Lessons" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                         </Col>
                                     </Row>
                 }
             </Row>
+            <Modal open={opened} footer={null} closable={true} onCancel={()=> setOpened(false)}>
+                <FoulData />
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <Button className='nextBtn' onClick={handleOpen}>Watch Video</Button>
+                </div>
+
+            </Modal>
         </div>
     )
 }
