@@ -54,3 +54,8 @@
     padding: 10px 0px !important;
     border-radius: 15px !important  ;
 }
+
+.article{
+    text-decoration: none;
+    color: inherit;
+}

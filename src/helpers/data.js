@@ -77,10 +77,10 @@ export const FishData = () => {
         </>
     )
 }
-export const FoulData = ({label}) => {
+export const FowlData = ({ label }) => {
     return (
         <>
-            <h2>Foul Farming in Ghana</h2>
+            <h2>Fowl Farming in Ghana</h2>
             <b>{label.toUpperCase()}</b>
             <p>Raising {label} is exciting! Knowing how is just as important. Here’s our beginner’s guide to raising {label}. This is the first article in a 6-part introduction so that we can help you “start from scratch,” so to speak.</p>
             <h4><i>Why Should You Raise {label}?</i></h4>
@@ -101,24 +101,70 @@ export const FoulData = ({label}) => {
                 <li>{label.charAt(0).toUpperCase() + label.slice(1)} are sociable creatures, so plan to keep three to six birds. With this amount, you’ll always have a steady supply of eggs, since an adult hen lays about two eggs every three days, on average.</li>
                 <li>{label.charAt(0).toUpperCase() + label.slice(1)} are most productive in the first two years of their lives; after that, egg production will slow, so you’ll need to think about replacing your flock with younger birds eventually. Young chicks can be bought from suppliers quite easily, or you can hatch your own if you have a rooster (which we do NOT recommend). Read more about raising baby chicks here!</li>
             </ol>
-            
+
             <p>
 
                 <b>How Much Space Do {label.charAt(0).toUpperCase() + label.slice(1)} Need?</b>
 
-            Ultimately, it depends on which breed of chicken you’re raising. According to the University of Missouri Extension, one medium-sized chicken needs at least 3 square feet of floor space inside the coop and 8-10 square feet outdoors. The more space, the happier and healthier the {label} will be; overcrowding contributes to disease and feather picking.
+                Ultimately, it depends on which breed of chicken you’re raising. According to the University of Missouri Extension, one medium-sized chicken needs at least 3 square feet of floor space inside the coop and 8-10 square feet outdoors. The more space, the happier and healthier the {label} will be; overcrowding contributes to disease and feather picking.
 
-            The birds will need a place to spread their wings, so to speak: a sizeable chicken run, for example, or a whole backyard. (Our hens have lots of outdoor time. They have places to take a dust bath and catch a few rays.) Either way, the space must be fenced in order to keep the {label} in and predators out. (Predators include your own Fido and Fluffy, too!) Add chicken-wire fencing to your list of equipment.
+                The birds will need a place to spread their wings, so to speak: a sizeable chicken run, for example, or a whole backyard. (Our hens have lots of outdoor time. They have places to take a dust bath and catch a few rays.) Either way, the space must be fenced in order to keep the {label} in and predators out. (Predators include your own Fido and Fluffy, too!) Add chicken-wire fencing to your list of equipment.
                 How Much Does Keeping {label.charAt(0).toUpperCase() + label.slice(1)} Cost?
-            All of this costs money, of course. The materials to build and furnish a coop and a 20x5-foot run—including wood, fencing, and hardware—are going to set you back at least $300. If you can’t do this work yourself, you’ll also be buying skilled labor.
-            Overall, expect to spend between $500 and $700 when just getting started, depending on the size of your flock, coop, and run.
-            Gardening with {label}. <br /> <br />
-            Most folks who keep {label} do so largely for the constant supply of fresh eggs, but did you know that keeping {label} can be also be beneficial for the garden?
-            When the gardening season has finished for the year, let the {label} into your gardening space and watch them go crazy! They’ll uproot the stems and stalks of weeds and gobble up any damaged or overripe vegetables that remain. They’ll eat any weed seeds or insects they find in the soil, and will peck apart and digest vegetable remnants, especially broccoli stems, carrot tops, chard, and kale. After that, they’ll scratch the ground and peck out hidden worms or insects, mixing up the soil in the process—all with endless enthusiasm and curiosity.
+                All of this costs money, of course. The materials to build and furnish a coop and a 20x5-foot run—including wood, fencing, and hardware—are going to set you back at least $300. If you can’t do this work yourself, you’ll also be buying skilled labor.
+                Overall, expect to spend between $500 and $700 when just getting started, depending on the size of your flock, coop, and run.
+                Gardening with {label}. <br /> <br />
+                Most folks who keep {label} do so largely for the constant supply of fresh eggs, but did you know that keeping {label} can be also be beneficial for the garden?
+                When the gardening season has finished for the year, let the {label} into your gardening space and watch them go crazy! They’ll uproot the stems and stalks of weeds and gobble up any damaged or overripe vegetables that remain. They’ll eat any weed seeds or insects they find in the soil, and will peck apart and digest vegetable remnants, especially broccoli stems, carrot tops, chard, and kale. After that, they’ll scratch the ground and peck out hidden worms or insects, mixing up the soil in the process—all with endless enthusiasm and curiosity.
                 {label.charAt(0).toUpperCase() + label.slice(1)} don’t only provide a constant supply of fresh eggs—they produce an endless amount of manure, too. Luckily, chicken poo can be composted, aged, and eventually added to the garden. In about 6 months’ time, you will accumulate about 1 cubic foot of manure per chicken.
-            During your daily cleaning of the coop, collect and pile up the chicken poop and used bedding materials. The best decomposition occurs when the pile is 2 parts poop to 1 part bedding materials. Lawn clippings and fruit and vegetable kitchen scraps, as well as leaves, twigs, and shredded paper, can also be added into the mix. Soak the pile and, over the next year or so, wet and stir it regularly to add air. A temperature of 130°F to 150°F is recommended to eliminate bacteria.
+                During your daily cleaning of the coop, collect and pile up the chicken poop and used bedding materials. The best decomposition occurs when the pile is 2 parts poop to 1 part bedding materials. Lawn clippings and fruit and vegetable kitchen scraps, as well as leaves, twigs, and shredded paper, can also be added into the mix. Soak the pile and, over the next year or so, wet and stir it regularly to add air. A temperature of 130°F to 150°F is recommended to eliminate bacteria.
             </p>
 
+        </>
+    )
+}
+
+export const PigData = () => {
+    return (
+        <>
+            <h2>Pig Farming in Ghana.</h2>
+            <p>
+                <b>1. Buying your pigs.</b>  <br /> It is important that you prepare the purebred stock from an acknowledged breeder that has quality purebred stock, which is greatly helpful for your advertising and marketing later with an instant credibility.
+
+            </p>
+            <p>
+                <b>2. Housing and bonding.</b> <br />
+                For the first 4-6 weeks, it is better to keep new pigs away from predators by placing them in a stall or safe quaters, which will also help you keep a close eye on your pigs to observe their performance. Wood shaving would be the best choice for pig bedding, and the living environment for pigs should be all natural and chemicals free. At the end of the 4-6 weeks your pigs should be ready to be moved to their new home for the next 3 months before ready to market, and the boar can be separated from the gilts to prevent any premature breeding.
+            </p>
+            <p>
+                <b>3. Fencing and outdoor shelter.</b> <br />
+                It is good time to start fencing during the first 4-6 weeks, and pigs can be fenced by many different ways. There are three most popular fencing for pigs.
+                <ul>
+                    <li>Perimeter fencing with hot-wire is the cheapest way to go especially for large areas.</li>
+                    <li>Hog wire roll fencing with metal T post and wood post for bracing corners and long spans is a little more expensive.</li>
+                    <li>Hog panels with metal T post for support is the most expensive way to go, but it is also the easiest way to install and virtually maintenance free.</li>
+                </ul>
+                For outdoor shelter, it is always better to use the natural environment for shade and protection. A wooden area is good to choose, but if vou have no wooden area, vow have to build or purchase one
+            </p>
+            <p>
+                <b>4. Pig watering and feed schedule.</b> <br />
+                Be sure you have adequate and constant supply of fresh water, because pigs need a lot of fresh clean water. It is a good start that to get your pigs off to a start with 18-20% pig feed. It is best to put the young pigs on a free choice diet, but not to feed them with more than 20% protein because it can cause scours which is dangerous for baby pigs,
+            </p>
+            <p>
+                <b>5. Worming schedule. </b> <br/>
+                You can give your pigs ivermectin every 6 months to kill eternal worms and external parasites; or you can use some organic worming products.
+            </p>
+            <p>
+                <b>6. Breeding.</b> <br />
+                Your pigs should be reaching 200-250 lbs after about 6 months and they are now ready for breeding.
+            </p>
+            <p>
+                <b>7. Pig gestation and farrowing.</b> <br />
+                Pig gestation period will last 114 days. It will be important that you log the breeding days so that you will have some ideas of when the new piglets will arrive. Your sows will need to be separated from the other pigs into her own separate living areas and put on a 18% 12 lbs to 15 lbs diet, approximately one month before giving birth.
+            </p>
+            <p>
+                <b>8. Raising piglets.</b> <br />
+                The new born piglets has to be given good nursery and after 8-10 weeks, piglets should be separated from the sow to wean for being raised to market weight.
+            </p>
         </>
     )
 }

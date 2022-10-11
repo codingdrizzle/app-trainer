@@ -7,7 +7,7 @@ const Pests = () => {
   const { Step } = Steps;
   const { Title, Text } = Typography
   const [current, setCurrent] = useState(0)
-  const [string, setString] = useState(['Pest-and-Disease'])
+  const [string, setString] = useState(['Pest-and-Disease / Tutorial'])
 
   const handleClick = (name) => {
     setCurrent(prev => prev + 1)
@@ -26,6 +26,7 @@ const Pests = () => {
 
   useEffect(() => {
     console.log(string)
+    // setString(prev => [...prev, 'Tutorial']/)
   }, [string])
   return (
     <div>
@@ -42,45 +43,27 @@ const Pests = () => {
           ))}
 
         </Col>
+
         {
           current === 0 &&
-          <>
-            <Col xs={24} md={12}>
-              <Title level={3}>Pests &amp; Disease Control (STEPS AND GUIDE)</Title>
-              <ol>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-              </ol>
-            </Col>
-            <Col xs={24} md={12}>
-              <Title level={3}>Recommended Pest &amp; Disease Control Chemicals</Title>
-              <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-              </ul>
-            </Col>
-            <Col span={24} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-              <Button className='nextBtn' onClick={() => handleClick('Tutorial')}><FaVideo size={25} color={'#fff'} /> <Text style={{color: '#fff'}}>Watch Video</Text> </Button>
-            </Col>
-          </>
-        }
-        {
-          current === 1 && string[string.length - 1] === 'Tutorial' &&
           <Col span={24}>
             <Row gutter={[10, 10]} align={'middle'} justify='center'>
               <Col xs={24} md={8} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <iframe width="500" height="300" src="https://www.youtube.com/embed/g_Qoqu_qhjM" title="How to make organic pesticide from neem leaves" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </Col>
               <Col xs={24} md={8} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <iframe width="500" height="300" src="https://www.youtube.com/embed/hXlSicZE9jI" title="10 Organic Ways to Control Pests in the Garden" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>              </Col>
+                <iframe width="500" height="300" src="https://www.youtube.com/embed/hXlSicZE9jI" title="10 Organic Ways to Control Pests in the Garden" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </Col>
               <Col xs={24} md={8} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <iframe width="500" height="300" src="https://www.youtube.com/embed/kKynrKrrADo" title="All Pest Controls Chemical Pesticides | How To Use Chemical Pesticides |" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>              </Col>
+                <iframe width="500" height="300" src="https://www.youtube.com/embed/kKynrKrrADo" title="All Pest Controls Chemical Pesticides | How To Use Chemical Pesticides |" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </Col>
+              <Col xs={24} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', border: '2px solid dodgerblue', cursor: 'pointer' }}>
+                <Title style={{margin: 0, padding: 0}}>
+                  <a href="https://www.canna-uk.com/how_control_pests_and_diseases_biological_vs_chemical" target={'_blank'}className='article'>
+                    Read this article
+                  </a>
+                </Title>
+              </Col>
             </Row>
           </Col>
         }

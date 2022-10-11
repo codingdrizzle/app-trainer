@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Row, Col, Typography, Steps, message, Modal, Button } from 'antd'
-import { FoulData } from '../../helpers/data';
+import { FowlData, PigData } from '../../helpers/data';
 import SelectCard from './select-card';
 import './styles.css'
 
@@ -12,8 +12,11 @@ const Animals = () => {
     const [string, setString] = useState(['Animals'])
 
     const handleClick = (name) => {
+        console.log(string[string.length - 1])
         setString(prev => [...prev, name])
-        if (string[1] === 'fouls') {
+        if (string[1] === 'fowls') {
+            setOpened(true)
+        } else if (name === 'pig'){
             setOpened(true)
         }else{
             setCurrent(prev => prev + 1)
@@ -62,9 +65,9 @@ const Animals = () => {
                                 <Title level={1} style={{ color: '#fff' }}>Livestock</Title>
                             </div>
                         </Col>
-                        <Col xs={24} md={10} className='select-card' onClick={() => handleClick('fouls')} style={{ backgroundImage: `url(https://cdn.pixabay.com/photo/2016/11/29/05/25/chicken-1867521__340.jpg)` }}>
+                        <Col xs={24} md={10} className='select-card' onClick={() => handleClick('fowls')} style={{ backgroundImage: `url(https://cdn.pixabay.com/photo/2016/11/29/05/25/chicken-1867521__340.jpg)` }}>
                             <div className='select-card-inner'>
-                                <Title level={1} style={{ color: '#fff' }}>Fouls</Title>
+                                <Title level={1} style={{ color: '#fff' }}>Fowls</Title>
                             </div>
                         </Col>
                     </>
@@ -87,7 +90,7 @@ const Animals = () => {
                                     <Title level={1} style={{ color: '#fff' }}>Pig</Title>
                                 </div>
                             </Col>
-                        </> : current === 1 && string[1] === 'fouls' &&
+                        </> : current === 1 && string[1] === 'fowls' &&
                         <>
                             <Col xs={24} md={10} className='select-card' style={{ backgroundImage: `url(https://www.thehappychickencoop.com/wp-content/uploads/2018/01/rooster-from-a-hen.jpg)` }}>
                                 <div className='select-card-inner' onClick={() => handleClick('hens')}>
@@ -140,7 +143,8 @@ const Animals = () => {
                 string.pop()
                 setOpened(false)
             }}>
-                <FoulData label={string[string.length - 1]}/>
+                {string[1] === 'fowls' && <FowlData label={string[string.length - 1]}/> }
+                {string[string.length - 1] === 'pig' && <PigData/>}
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <Button className='nextBtn' onClick={handleOpen}>Watch Video</Button>
                 </div>
